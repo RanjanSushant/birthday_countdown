@@ -51,9 +51,15 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .container {
     /* background-size: contain; */
-    background-position: 50% 50%;
+    background-position: -25em 10em;
+    background-color: rgba(255,0,0,0.3);
+    /* background-image: url("img1.jpg"),linear-gradient(-30deg, #fff,rgba(255,0,0,0.3), #fff); */
+  }
+  .to-your {
+    transform: translateX(-50%);
+    transform: skewY(-20deg);
   }
 }
