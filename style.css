@@ -5,7 +5,8 @@
 
 .container {
   min-height: 100vh;
-  background-image: url("img1.jpg"),linear-gradient(-30deg, #fff,rgba(255,0,0,0.3), #fff);
+  background-image: url("img1.jpg"),
+    linear-gradient(-30deg, #fff, rgba(255, 0, 0, 0.3), #fff);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,33 +22,48 @@
 
 .birthday-title {
   font-size: 2rem;
-  animation: grow-and-shrink 5000ms 100ms 1 ease-in-out;
+  -webkit-animation: grow-and-shrink 5000ms 100ms 1 ease-in-out;
+          animation: grow-and-shrink 5000ms 100ms 1 ease-in-out;
   /* transform: scale3d(4,4,4); */
 }
 
 .to-your {
-    font-size: 3.5rem;
-    font-weight: bold;
-    font-family: 'Dancing Script', cursive;
-    margin-left: 0;
-    padding-left: 0;
-    margin-right: 5em;
-    /* align-self: flex-start; */
-    transform: translateX(-75%);
-    transform: skewY(-20deg);
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 5em;
+  /* align-self: flex-start; */
+  transform: translateX(-75%);
+  transform: skewY(-20deg);
+}
+
+@-webkit-keyframes grow-and-shrink {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(3, 3);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 @keyframes grow-and-shrink {
   0% {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 
   50% {
-    transform: scale(3,3);
+    transform: scale(3, 3);
   }
 
   100% {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 }
 
@@ -55,7 +71,7 @@
   .container {
     /* background-size: contain; */
     background-position: -25em 10em;
-    background-color: rgba(255,0,0,0.3);
+    background-color: rgba(255, 0, 0, 0.3);
     /* background-image: url("img1.jpg"),linear-gradient(-30deg, #fff,rgba(255,0,0,0.3), #fff); */
   }
   .to-your {
