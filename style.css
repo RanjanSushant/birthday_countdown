@@ -70,12 +70,19 @@
 @media (max-width: 600px) {
   .container {
     /* background-size: contain; */
-    background-position: -25em 10em;
+    background-image: url("img2.jpg"),linear-gradient(-30deg, #fff, rgba(255, 0, 0, 0.3), #fff);
+    background-position: center;
+    justify-content: space-around ;
     background-color: rgba(255, 0, 0, 0.3);
     /* background-image: url("img1.jpg"),linear-gradient(-30deg, #fff,rgba(255,0,0,0.3), #fff); */
   }
+
+  .birthday-title {
+    align-self: flex-start;
+  }
   .to-your {
-    transform: translateX(-50%);
+    margin-right: 4em;
+    transform: translateX(50%);
     transform: skewY(-20deg);
   }
 }
