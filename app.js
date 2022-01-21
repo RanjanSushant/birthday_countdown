@@ -12,7 +12,7 @@ function setText() {
   const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-  if (seconds === 0) {
+  if (diff === 0) {
     document.querySelector(".birthday-title").innerHTML = `
     <h1>🥳IT'S YOUR BIRTHDAY 🥳</h1>`;
   } else {
